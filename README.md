@@ -1,6 +1,6 @@
-# 🚀 Portafolio de Prácticas DevOps – Meli
+# 🚀 Portafolio de Prácticas DevOps – Melissa
 
-¡Hola! Soy Meli 🌼  
+¡Hola! Soy Melissa 🌼  
 Soy Release Manager y estoy en pleno proceso de formación práctica en DevOps.  
 Este repositorio es el espacio donde voy documentando cada uno de mis mini proyectos y prácticas con herramientas modernas, integrando automatización, cloud, y buenas prácticas de despliegue.
 
