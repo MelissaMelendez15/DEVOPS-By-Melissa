@@ -1,0 +1,53 @@
+
+.header-magico { 
+  margin-top: 1.5rem;
+  animation: fadeSlide 1.8s ease;
+}
+
+.header-magico h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  color: #c94f7c;
+  text-shadow: 0 2px 4px rgba(255, 182, 193, 0.4);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.estrellas-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+
+.estrella {
+  animation: girarEstrella 3s ease-out infinite;
+  font-size: 1.4rem;
+  color: #ffbde6;
+  transition: all 0.3s ease;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes girarEstrella {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.8;
+    text-shadow: 0 0 4px #ffcce7;
+  }
+  50% {
+    transform: rotate(20deg) scale(1.2);
+    opacity: 1;
+    text-shadow: 0 0 12px #ffcce7, 0 0 18px #ffaad4;
+  }
+}

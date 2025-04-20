@@ -1,0 +1,45 @@
+.sky-container {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px; /* ajusta según quieras el cielo */
+  overflow: hidden;
+  z-index: 0;
+}
+
+.cloud {
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  background-image: url("../../assets/cloud.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  animation: floatClouds 60s linear infinite;
+  z-index: 1;
+}
+
+/* Nubes normales (izq -> der) */
+@keyframes floatClouds {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+
+/* Nubes al revés (der -> izq) */
+.cloud.reverse {
+  animation-name: floatCloudsReverse;
+}
+
+@keyframes  floatCloudsReverse{
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: -200px;
+  }
+}

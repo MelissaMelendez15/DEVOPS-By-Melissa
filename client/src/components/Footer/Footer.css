@@ -1,0 +1,47 @@
+.footer-magico {
+  width: 100vw; 
+  position: fixed; 
+  bottom: 0; 
+  left: 0;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: rgba(255, 255, 255, 0.3);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-family: 'Comic Neue', cursive;
+  font-size: 0.95rem;
+  color: #5a1e2c;
+  backdrop-filter: blur(4px);
+  animation: floatFooter 6s ease-in-out infinite;
+  z-index: 999; 
+}
+
+.divider-magico {
+  width: 60%;
+  margin: 0 auto 1rem auto;
+  border: none;
+  border-top: 2px dotted #ffcce6;
+}
+
+.firma-magica {
+  margin: 0;
+  font-style: italic;
+  padding: 0 1rem;
+  word-break: break-word;
+}
+
+@media (max-width: 576px) {
+  .firma-magica {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+}
+
+@keyframes floatFooter {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}

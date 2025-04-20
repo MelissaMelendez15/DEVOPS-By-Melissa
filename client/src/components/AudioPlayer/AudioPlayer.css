@@ -1,0 +1,26 @@
+.audio-player-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.magic-button {
+  background: linear-gradient(135deg, #ffb6c1, #ffe4e1);
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #6b1f3b;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.4);
+  transition: all 0.3s ease;
+  font-family: 'Comic Neue', cursive;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.magic-button:hover {
+ transform: scale(1.05);
+ box-shadow: 0 0 16px rgba(255, 105, 180, 0.5);
+}

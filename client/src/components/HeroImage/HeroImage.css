@@ -1,0 +1,50 @@
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 180px; 
+  padding: 1rem 0 0.5rem; 
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-image {
+  width: 65%;
+  max-width: 240px;
+  height: auto;
+  animation: float 6s ease-in-out infinite;
+}
+
+@media (max-width: 576px) {
+  .hero-image {
+    width: 75%;
+    max-width: 220px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 1024px) {
+  .hero-container {
+    min-height: 250px;
+  }
+
+  .hero-image {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hero-container {
+    min-height: 300px;
+  }
+
+  .hero-image {
+    max-width: 320px;
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
